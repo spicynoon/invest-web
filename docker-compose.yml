@@ -1,0 +1,14 @@
+version: "3"
+services:
+  invest-app:
+    image: spicynoon/investyu:1.0
+    ports:
+      - "25144:25144"
+    networks:
+      - niat-yang-suci
+    volumes:
+      - /home/praktikumc/1217050144/investyu:/home/investyu
+
+networks:
+  niat-yang-suci:
+    external: true
